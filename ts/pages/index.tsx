@@ -21,7 +21,7 @@ const Landing: NextPage<LandingProps> = (props: LandingProps) => {
   return (
     <>
       <button type="button" onClick={clickHandler}>{testText}</button>
-      <Link href="/guide/components"><a>to the components page</a></Link>
+      <Link href="/guide/components/components"><a>to the components page</a></Link>
     </>
   );
 };

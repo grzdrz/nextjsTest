@@ -41,6 +41,7 @@
     "react/jsx-props-no-spreading": "off",
     "linebreak-style": "off",
     "no-nested-ternary": 0,
-    "react/button-has-type": "off"
+    "react/button-has-type": "off",
+    "max-len": "off"
   }
 }
