@@ -1,0 +1,95 @@
+$borderRadius: 1.375rem;
+
+$color-blue: rgb(139, 164, 249);
+$color-purple: rgba(188, 156, 255, 1);
+
+$gradient-purple-to-blue: linear-gradient(to bottom, rgb(188, 156, 255), rgb(139, 164, 249));
+$gradient-purple-to-blue-50: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+$gradient-purple-to-blue-25: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+
+.button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    .background {
+      background: $gradient-purple-to-blue-50;
+    }
+  }
+
+  &Hollow {
+    .basis {
+      background: white;
+      background-clip: padding-box;
+      border: solid 0.125rem transparent;
+    }
+
+    .arrow {
+      color: $color-purple;
+    }
+
+    .text {
+      color: $color-purple;
+    }
+  }
+}
+
+.background {
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: $borderRadius;
+  background: $gradient-purple-to-blue;
+}
+
+.basis {
+  z-index: 2;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: $borderRadius;
+  background: transparent;
+}
+
+.text {
+  cursor: pointer;
+  width: 100%;
+  margin: 0rem 1rem;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &WithArrow {
+    margin: 0rem 2.5rem;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  right: 0.7rem;
+  font-family: Material Icons;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}

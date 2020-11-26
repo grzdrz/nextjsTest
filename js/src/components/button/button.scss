@@ -1,0 +1,13 @@
+.button {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+
+  &__text {
+    color: blue;
+  }
+
+  &_color_yellow {
+    background: rgb(224, 255, 87);
+  }
+}
