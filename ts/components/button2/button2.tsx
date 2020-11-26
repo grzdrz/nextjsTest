@@ -13,7 +13,7 @@ const Button2 = (props: IProps): JSX.Element => {
     text = 'click me',
     url = 'https://error.com/',
     isOuterRef = true,
-    buttonType = undefined,
+    buttonType = 'button',
   } = props;
 
   const buttonInner = (
