@@ -1,12 +1,12 @@
+import { BasisType } from './elements/basis/basis.types';
+
 interface IProps {
   isHollow?: boolean,
   hasArrow?: boolean,
-  basis?: string,
   text?: string,
-  url?: string,
-  isOuterRef?: boolean,
-  isForHeader?: boolean,
+  basisType?: BasisType,
   buttonType?: 'button' | 'submit' | 'reset',
+  url?: string,
 }
 
 export default IProps;
